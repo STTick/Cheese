@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="1055" y="340"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="DfY-dT-4sI">
             <objects>
-                <viewController id="Ymg-xD-9yB" sceneMemberID="viewController">
+                <viewController id="Ymg-xD-9yB" customClass="LoginViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TPn-84-WuF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="1732" y="340"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="vG2-hk-ev8">
             <objects>
-                <viewController id="9N7-Mg-USv" sceneMemberID="viewController">
+                <viewController id="9N7-Mg-USv" customClass="CameraViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00N-Dx-dnZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="2417" y="340"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter Draw View Controller-->
         <scene sceneID="pag-I2-cj9">
             <objects>
-                <viewController id="oeJ-nZ-J0J" sceneMemberID="viewController">
+                <viewController id="oeJ-nZ-J0J" customClass="FilterDrawViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wvb-VC-KdS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="3114" y="340"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter Text View Controller-->
         <scene sceneID="HEw-hI-ZWI">
             <objects>
-                <viewController id="LrZ-MB-koD" sceneMemberID="viewController">
+                <viewController id="LrZ-MB-koD" customClass="FilterTextViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Iu-Um-GH5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="3810" y="340"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter Picture View Controller-->
         <scene sceneID="W5q-bk-GNk">
             <objects>
-                <viewController id="NPR-G3-s8g" sceneMemberID="viewController">
+                <viewController id="NPR-G3-s8g" customClass="FilterPictureViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CBf-BY-Rbl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="4494" y="340"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter Save View Controller-->
         <scene sceneID="bqh-u4-2kK">
             <objects>
-                <viewController id="lL8-Bf-1ca" sceneMemberID="viewController">
+                <viewController id="lL8-Bf-1ca" customClass="FilterSaveViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W8z-kd-NBQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
