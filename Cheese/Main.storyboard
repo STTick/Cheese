@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3lo-QB-gjw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3lo-QB-gjw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20019"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -64,21 +64,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="카메라" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-bA-tzQ">
-                                <rect key="frame" x="185" y="438" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="CamereButtonBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-eV-6Hx">
+                                <rect key="frame" x="0.0" y="745" width="414" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="kCs-za-lhh"/>
+                                    <constraint firstAttribute="height" constant="151" id="ooz-vc-mUA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKY-dX-O93">
+                                <rect key="frame" x="177" y="790" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HDT-mF-TIp"/>
+                                    <constraint firstAttribute="height" constant="60" id="tNn-5Z-xfu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="CameraButtinImage"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="712-up-djb">
+                                <rect key="frame" x="29" y="111" width="23" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="WVC-jc-i7y"/>
+                                    <constraint firstAttribute="width" constant="23" id="nSK-JA-x6T"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="small">
+                                    <backgroundConfiguration key="background" image="FilterListButton"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sz-Pq-sTG">
+                                <rect key="frame" x="360" y="107" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="GAr-0w-Iom"/>
+                                    <constraint firstAttribute="width" constant="25" id="hBR-ot-QYF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="ResetButtonImage"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1WP-sA-gQS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Sz-Pq-sTG" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="63" id="5zp-be-Rff"/>
+                            <constraint firstItem="1WP-sA-gQS" firstAttribute="trailing" secondItem="oKY-dX-O93" secondAttribute="trailing" constant="177" id="DMr-kM-Sa2"/>
+                            <constraint firstItem="1WP-sA-gQS" firstAttribute="bottom" secondItem="oKY-dX-O93" secondAttribute="bottom" constant="12" id="LC8-Fc-NWk"/>
+                            <constraint firstItem="oKY-dX-O93" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" constant="177" id="S0U-ub-Loe"/>
+                            <constraint firstItem="712-up-djb" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" constant="29" id="V5M-z8-koh"/>
+                            <constraint firstItem="DfC-eV-6Hx" firstAttribute="trailing" secondItem="1WP-sA-gQS" secondAttribute="trailing" id="gjE-sU-crp"/>
+                            <constraint firstItem="oKY-dX-O93" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="746" id="gnS-OV-7zh"/>
+                            <constraint firstItem="1WP-sA-gQS" firstAttribute="trailing" secondItem="8Sz-Pq-sTG" secondAttribute="trailing" constant="29" id="gtc-uB-TbB"/>
+                            <constraint firstItem="DfC-eV-6Hx" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" id="iH4-M3-Aw9"/>
+                            <constraint firstAttribute="bottom" secondItem="DfC-eV-6Hx" secondAttribute="bottom" id="rDy-Tb-BPX"/>
+                            <constraint firstItem="712-up-djb" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="67" id="s1R-m6-icC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9R-8m-Jjr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2417" y="340"/>
+            <point key="canvasLocation" x="2415.9420289855075" y="339.50892857142856"/>
         </scene>
         <!--Filter Draw View Controller-->
         <scene sceneID="pag-I2-cj9">
@@ -178,6 +224,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CameraButtinImage" width="120" height="120"/>
+        <image name="CamereButtonBackgroundImage" width="750" height="250"/>
+        <image name="FilterListButton" width="512" height="356"/>
+        <image name="ResetButtonImage" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
