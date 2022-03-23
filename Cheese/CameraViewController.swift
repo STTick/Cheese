@@ -7,23 +7,33 @@
 
 import UIKit
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController , UICollectionViewDataSource,
+                            UICollectionViewDelegate {
+    @IBOutlet weak var filterCollectionView: UICollectionView!
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        //이미지 카운터 하는 함수
 
-        // Do any additional setup after loading the view.
+        return 6
+
     }
+
     
 
-    /*
-    // MARK: - Navigation
+    //셀 구성하기
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RowCell", for: indexPath) as! FilterCollectionViewCell
+        cell.backgroundColor = .blue
+        
+        return cell
+
     }
-    */
-
-}
+          override func viewDidLoad() {
+              super.viewDidLoad()
+              filterCollectionView.delegate = self
+              filterCollectionView.dataSource = self
+              // Do any additional setup after loading the view.
+          }
+      }
+  

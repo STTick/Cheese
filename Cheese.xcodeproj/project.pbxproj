@@ -20,6 +20,7 @@
 		6AB02DA927DAF455007553E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB02DA827DAF455007553E1 /* SceneDelegate.swift */; };
 		6AB02DB027DAF458007553E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB02DAF27DAF458007553E1 /* Assets.xcassets */; };
 		6AB02DB327DAF458007553E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB02DB127DAF458007553E1 /* LaunchScreen.storyboard */; };
+		8A33CC2127EADAF300812191 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A33CC2027EADAF300812191 /* FilterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6AB02DAF27DAF458007553E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB02DB227DAF458007553E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AB02DB427DAF458007553E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A33CC2027EADAF300812191 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				6AAF653C27E30D730073EF3F /* FilterTextViewController.swift */,
 				6AAF653E27E30D820073EF3F /* FilterPictureViewController.swift */,
 				6AAF654027E30D950073EF3F /* FilterSaveViewController.swift */,
+				8A33CC2027EADAF300812191 /* FilterCollectionViewCell.swift */,
 			);
 			path = Cheese;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A33CC2127EADAF300812191 /* FilterCollectionViewCell.swift in Sources */,
 				6AAF653727E30D130073EF3F /* LoginViewController.swift in Sources */,
 				6AAF653927E30D270073EF3F /* CameraViewController.swift in Sources */,
 				6AAF653527E30D090073EF3F /* SignUpViewController.swift in Sources */,
