@@ -14,18 +14,23 @@ class CameraViewController: UIViewController , UICollectionViewDataSource,
 
         //이미지 카운터 하는 함수
 
-        return 6
+        return 3
 
     }
+    
+    
 
     
 
     //셀 구성하기
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RowCell", for: indexPath) as! FilterCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FilterCollectionViewCell
         cell.backgroundColor = .blue
         
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 50
+
         return cell
 
     }
