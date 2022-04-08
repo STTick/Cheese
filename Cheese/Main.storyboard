@@ -105,9 +105,9 @@
                                     <backgroundConfiguration key="background" image="ResetButtonImage"/>
                                 </buttonConfiguration>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="cell" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iVL-fl-nM8">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" restorationIdentifier="cell" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iVL-fl-nM8">
                                 <rect key="frame" x="0.0" y="497" width="414" height="274"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="ja5-cz-SAr"/>
                                     <constraint firstAttribute="height" constant="274" id="kHo-w7-xDO"/>
@@ -138,26 +138,19 @@
                                     <constraint firstAttribute="height" constant="50" id="UXd-tn-2bA"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-PM-vGp">
-                                <rect key="frame" x="50" y="459" width="73" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-PM-vGp">
+                                <rect key="frame" x="50" y="459" width="81.5" height="28"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="전체 필터">
-                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="15"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH8-ta-HuY">
-                                <rect key="frame" x="268" y="459" width="99" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH8-ta-HuY">
+                                <rect key="frame" x="265.5" y="459" width="112.5" height="28"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="내가 만든 필터">
-                                            <attributes>
-                                                <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="내가 만든 필터">
+                                    <fontDescription key="titleFontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="15"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                             </button>
@@ -165,31 +158,31 @@
                         <viewLayoutGuide key="safeArea" id="1WP-sA-gQS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bgm-PM-vGp" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" constant="50" id="1NU-8L-Ibl"/>
                             <constraint firstItem="iVL-fl-nM8" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" id="5Hz-rv-ldD"/>
                             <constraint firstItem="8Sz-Pq-sTG" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="63" id="5zp-be-Rff"/>
+                            <constraint firstItem="1WP-sA-gQS" firstAttribute="trailing" secondItem="AH8-ta-HuY" secondAttribute="trailing" constant="36" id="6iX-rg-6NL"/>
                             <constraint firstItem="lQR-g3-vyv" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" id="7fR-cL-fPx"/>
+                            <constraint firstItem="iVL-fl-nM8" firstAttribute="top" secondItem="AH8-ta-HuY" secondAttribute="bottom" constant="10" id="7ln-Je-ocM"/>
                             <constraint firstItem="lQR-g3-vyv" firstAttribute="trailing" secondItem="1WP-sA-gQS" secondAttribute="trailing" id="Amf-3C-TN8"/>
                             <constraint firstItem="iVL-fl-nM8" firstAttribute="trailing" secondItem="1WP-sA-gQS" secondAttribute="trailing" id="BeN-xg-Dv5"/>
-                            <constraint firstItem="iVL-fl-nM8" firstAttribute="top" secondItem="AH8-ta-HuY" secondAttribute="bottom" constant="10" id="Bjf-eE-ccL"/>
+                            <constraint firstItem="iVL-fl-nM8" firstAttribute="top" secondItem="bgm-PM-vGp" secondAttribute="bottom" constant="10" id="C4g-iU-KQQ"/>
                             <constraint firstItem="1WP-sA-gQS" firstAttribute="trailing" secondItem="oKY-dX-O93" secondAttribute="trailing" constant="177" id="DMr-kM-Sa2"/>
-                            <constraint firstItem="iVL-fl-nM8" firstAttribute="top" secondItem="bgm-PM-vGp" secondAttribute="bottom" constant="10" id="DV8-cf-r9h"/>
                             <constraint firstItem="1WP-sA-gQS" firstAttribute="bottom" secondItem="oKY-dX-O93" secondAttribute="bottom" constant="12" id="LC8-Fc-NWk"/>
+                            <constraint firstItem="AH8-ta-HuY" firstAttribute="top" secondItem="8Sz-Pq-sTG" secondAttribute="bottom" constant="327" id="LNH-NC-kd1"/>
                             <constraint firstItem="oKY-dX-O93" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" constant="177" id="S0U-ub-Loe"/>
                             <constraint firstItem="712-up-djb" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" constant="29" id="V5M-z8-koh"/>
-                            <constraint firstItem="1WP-sA-gQS" firstAttribute="trailing" secondItem="AH8-ta-HuY" secondAttribute="trailing" constant="47" id="Vbb-kn-9vv"/>
                             <constraint firstItem="iVL-fl-nM8" firstAttribute="top" secondItem="8Sz-Pq-sTG" secondAttribute="bottom" constant="365" id="Zmp-7p-GKb"/>
+                            <constraint firstItem="AH8-ta-HuY" firstAttribute="leading" secondItem="bgm-PM-vGp" secondAttribute="trailing" constant="134" id="c0j-rO-hOH"/>
                             <constraint firstItem="lQR-g3-vyv" firstAttribute="top" secondItem="8Sz-Pq-sTG" secondAttribute="bottom" constant="316" id="fP1-Sh-kWC"/>
                             <constraint firstItem="DfC-eV-6Hx" firstAttribute="trailing" secondItem="1WP-sA-gQS" secondAttribute="trailing" id="gjE-sU-crp"/>
                             <constraint firstItem="oKY-dX-O93" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="746" id="gnS-OV-7zh"/>
+                            <constraint firstItem="bgm-PM-vGp" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="415" id="gri-iC-m0f"/>
                             <constraint firstItem="1WP-sA-gQS" firstAttribute="trailing" secondItem="8Sz-Pq-sTG" secondAttribute="trailing" constant="29" id="gtc-uB-TbB"/>
                             <constraint firstItem="DfC-eV-6Hx" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" id="iH4-M3-Aw9"/>
-                            <constraint firstItem="AH8-ta-HuY" firstAttribute="leading" secondItem="bgm-PM-vGp" secondAttribute="trailing" constant="145" id="mrI-Go-Ij3"/>
+                            <constraint firstItem="bgm-PM-vGp" firstAttribute="leading" secondItem="1WP-sA-gQS" secondAttribute="leading" constant="50" id="oEb-71-U4d"/>
                             <constraint firstItem="DfC-eV-6Hx" firstAttribute="top" secondItem="lQR-g3-vyv" secondAttribute="bottom" constant="247" id="qB7-hZ-erY"/>
                             <constraint firstAttribute="bottom" secondItem="DfC-eV-6Hx" secondAttribute="bottom" id="rDy-Tb-BPX"/>
                             <constraint firstItem="712-up-djb" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="67" id="s1R-m6-icC"/>
-                            <constraint firstItem="bgm-PM-vGp" firstAttribute="top" secondItem="1WP-sA-gQS" secondAttribute="top" constant="415" id="tgZ-hy-gll"/>
-                            <constraint firstItem="AH8-ta-HuY" firstAttribute="top" secondItem="8Sz-Pq-sTG" secondAttribute="bottom" constant="327" id="vn6-SD-XHL"/>
                             <constraint firstItem="oKY-dX-O93" firstAttribute="top" secondItem="iVL-fl-nM8" secondAttribute="bottom" constant="19" id="voL-7k-IPO"/>
                         </constraints>
                     </view>
@@ -301,7 +294,7 @@
     <resources>
         <image name="CameraButtinImage" width="120" height="120"/>
         <image name="CamereButtonBackgroundImage" width="750" height="250"/>
-        <image name="FilterListBackgroundImage" width="375" height="44"/>
+        <image name="FilterListBackgroundImage" width="512" height="60"/>
         <image name="FilterListButtonImage" width="512" height="356"/>
         <image name="ResetButtonImage" width="25" height="25"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
