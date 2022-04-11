@@ -7,52 +7,42 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate {
-    var list = ["1", "2", "3", "4" ,"5", "6", "7", "8", "9", "10"]
+class CameraViewController: UIViewController , UICollectionViewDataSource{
+    @IBOutlet weak var filterCollectionView: UICollectionView!
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
+        return 10
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FilterCollectionViewCell
+           cell.backgroundColor = .red
+
+        return cell
+    }
     
-    @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
-        
+        filterCollectionView.delegate = self
+        filterCollectionView.dataSource = self
+        // Do any additional setup after loading the view.
     }
 }
     
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return list.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CSCollectionViewCell
-        
-        cell.backgroundColor = .lightGray
-        cell.lbl.text = list[indexPath.row]
-        cell.lbl.backgroundColor = .yellow
-        
-        return cell
-    }
-}
-
-
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension UIViewController: UICollectionViewDelegateFlowLayout {
 
     // 위 아래 간격
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
 
     // 옆 간격
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
 
     // cell 사이즈( 옆 라인을 고려하여 설정 )
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let width = collectionView.frame.width / 3 - 1 ///  3등분하여 배치, 옆 간격이 1이므로 1을 빼줌
         print("collectionView width=\(collectionView.frame.width)")
@@ -62,9 +52,4 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         let size = CGSize(width: width, height: width)
         return size
     }
-}
-    
-class CSCollectionViewCell : UICollectionViewCell {
-    
-    @IBOutlet var lbl: UILabel!
 }
