@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		37EFFE9227FFF55400509AAD /* Prompt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37EFFE9127FFF55400509AAD /* Prompt-Bold.ttf */; };
 		37EFFE9427FFF57700509AAD /* Prompt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37EFFE9327FFF57700509AAD /* Prompt-SemiBold.ttf */; };
-		37EFFE9627FFF58000509AAD /* Prompt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37EFFE9527FFF58000509AAD /* Prompt-Regular.ttf */; };
 		37EFFE9827FFF59100509AAD /* Prompt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37EFFE9727FFF59100509AAD /* Prompt-Medium.ttf */; };
-		6AAF64EF27E3092A0073EF3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAF64EE27E309290073EF3F /* Main.storyboard */; };
+		37FF0B16282CB5D000979779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FF0B14282CB5D000979779 /* Main.storyboard */; };
+		37FF0B1B282CB61C00979779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FF0B17282CB61B00979779 /* Main.storyboard */; };
 		6AAF652627E30B740073EF3F /* Prompt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AAF651C27E30B600073EF3F /* Prompt-SemiBold.ttf */; };
 		6AAF653527E30D090073EF3F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF653427E30D090073EF3F /* SignUpViewController.swift */; };
 		6AAF653727E30D130073EF3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF653627E30D130073EF3F /* LoginViewController.swift */; };
@@ -29,9 +29,9 @@
 /* Begin PBXFileReference section */
 		37EFFE9127FFF55400509AAD /* Prompt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Bold.ttf"; sourceTree = "<group>"; };
 		37EFFE9327FFF57700509AAD /* Prompt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-SemiBold.ttf"; sourceTree = "<group>"; };
-		37EFFE9527FFF58000509AAD /* Prompt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Regular.ttf"; sourceTree = "<group>"; };
 		37EFFE9727FFF59100509AAD /* Prompt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Medium.ttf"; sourceTree = "<group>"; };
-		6AAF64EE27E309290073EF3F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		37FF0B15282CB5D000979779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../Desktop/STUDY/xxx/test2/test2/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37FF0B17282CB61B00979779 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6AAF651C27E30B600073EF3F /* Prompt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-SemiBold.ttf"; sourceTree = "<group>"; };
 		6AAF653427E30D090073EF3F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6AAF653627E30D130073EF3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 				6AB02DAF27DAF458007553E1 /* Assets.xcassets */,
 				6AB02DB127DAF458007553E1 /* LaunchScreen.storyboard */,
 				6AB02DB427DAF458007553E1 /* Info.plist */,
-				6AAF64EE27E309290073EF3F /* Main.storyboard */,
 				6AAF653427E30D090073EF3F /* SignUpViewController.swift */,
 				6AAF653627E30D130073EF3F /* LoginViewController.swift */,
 				6AAF653827E30D270073EF3F /* CameraViewController.swift */,
@@ -93,7 +92,8 @@
 				6AAF654027E30D950073EF3F /* FilterSaveViewController.swift */,
 				37EFFE9127FFF55400509AAD /* Prompt-Bold.ttf */,
 				6AAF651C27E30B600073EF3F /* Prompt-SemiBold.ttf */,
-				37EFFE9527FFF58000509AAD /* Prompt-Regular.ttf */,
+				37FF0B17282CB61B00979779 /* Main.storyboard */,
+				37FF0B14282CB5D000979779 /* Main.storyboard */,
 				37EFFE9727FFF59100509AAD /* Prompt-Medium.ttf */,
 				37EFFE9327FFF57700509AAD /* Prompt-SemiBold.ttf */,
 			);
@@ -158,12 +158,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAF64EF27E3092A0073EF3F /* Main.storyboard in Resources */,
-				37EFFE9627FFF58000509AAD /* Prompt-Regular.ttf in Resources */,
 				6AB02DB327DAF458007553E1 /* LaunchScreen.storyboard in Resources */,
 				6AAF652627E30B740073EF3F /* Prompt-SemiBold.ttf in Resources */,
+				37FF0B16282CB5D000979779 /* Main.storyboard in Resources */,
 				37EFFE9427FFF57700509AAD /* Prompt-SemiBold.ttf in Resources */,
 				37EFFE9827FFF59100509AAD /* Prompt-Medium.ttf in Resources */,
+				37FF0B1B282CB61C00979779 /* Main.storyboard in Resources */,
 				37EFFE9227FFF55400509AAD /* Prompt-Bold.ttf in Resources */,
 				6AB02DB027DAF458007553E1 /* Assets.xcassets in Resources */,
 			);
@@ -191,6 +191,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		37FF0B14282CB5D000979779 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37FF0B15282CB5D000979779 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		6AB02DB127DAF458007553E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
