@@ -19,11 +19,11 @@
 		6AAF653B27E30D6C0073EF3F /* FilterDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF653A27E30D6C0073EF3F /* FilterDrawViewController.swift */; };
 		6AAF653D27E30D730073EF3F /* FilterTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF653C27E30D730073EF3F /* FilterTextViewController.swift */; };
 		6AAF653F27E30D820073EF3F /* FilterPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF653E27E30D820073EF3F /* FilterPictureViewController.swift */; };
-		6AAF654127E30D950073EF3F /* FilterSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF654027E30D950073EF3F /* FilterSaveViewController.swift */; };
 		6AB02DA727DAF455007553E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB02DA627DAF455007553E1 /* AppDelegate.swift */; };
 		6AB02DA927DAF455007553E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB02DA827DAF455007553E1 /* SceneDelegate.swift */; };
-		6AB02DB027DAF458007553E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB02DAF27DAF458007553E1 /* Assets.xcassets */; };
 		6AB02DB327DAF458007553E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB02DB127DAF458007553E1 /* LaunchScreen.storyboard */; };
+		8A33CC2127EADAF300812191 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A33CC2027EADAF300812191 /* FilterCollectionViewCell.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +39,14 @@
 		6AAF653A27E30D6C0073EF3F /* FilterDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDrawViewController.swift; sourceTree = "<group>"; };
 		6AAF653C27E30D730073EF3F /* FilterTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTextViewController.swift; sourceTree = "<group>"; };
 		6AAF653E27E30D820073EF3F /* FilterPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPictureViewController.swift; sourceTree = "<group>"; };
-		6AAF654027E30D950073EF3F /* FilterSaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSaveViewController.swift; sourceTree = "<group>"; };
 		6AB02DA327DAF455007553E1 /* Cheese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB02DA627DAF455007553E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AB02DA827DAF455007553E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AB02DAF27DAF458007553E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB02DB227DAF458007553E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AB02DB427DAF458007553E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		8A33CC2027EADAF300812191 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +79,13 @@
 		6AB02DA527DAF455007553E1 /* Cheese */ = {
 			isa = PBXGroup;
 			children = (
+				BF5DD81F282CB2E300E4ED00 /* Prompt-Medium.ttf */,
+				BF5DD820282CB2E300E4ED00 /* Prompt-MediumItalic.ttf */,
+				BF5DD81D282CB1CB00E4ED00 /* Prompt-Black.ttf */,
+				BF5DD81E282CB1D600E4ED00 /* Prompt-Bold.ttf */,
+				6AAF651C27E30B600073EF3F /* Prompt-SemiBold.ttf */,
 				6AB02DA627DAF455007553E1 /* AppDelegate.swift */,
 				6AB02DA827DAF455007553E1 /* SceneDelegate.swift */,
-				6AB02DAF27DAF458007553E1 /* Assets.xcassets */,
 				6AB02DB127DAF458007553E1 /* LaunchScreen.storyboard */,
 				6AB02DB427DAF458007553E1 /* Info.plist */,
 				6AAF653427E30D090073EF3F /* SignUpViewController.swift */,
@@ -89,6 +94,7 @@
 				6AAF653A27E30D6C0073EF3F /* FilterDrawViewController.swift */,
 				6AAF653C27E30D730073EF3F /* FilterTextViewController.swift */,
 				6AAF653E27E30D820073EF3F /* FilterPictureViewController.swift */,
+
 				6AAF654027E30D950073EF3F /* FilterSaveViewController.swift */,
 				37EFFE9127FFF55400509AAD /* Prompt-Bold.ttf */,
 				6AAF651C27E30B600073EF3F /* Prompt-SemiBold.ttf */,
@@ -96,6 +102,7 @@
 				37FF0B14282CB5D000979779 /* Main.storyboard */,
 				37EFFE9727FFF59100509AAD /* Prompt-Medium.ttf */,
 				37EFFE9327FFF57700509AAD /* Prompt-SemiBold.ttf */,
+				8A33CC2027EADAF300812191 /* FilterCollectionViewCell.swift */,
 			);
 			path = Cheese;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB02DB327DAF458007553E1 /* LaunchScreen.storyboard in Resources */,
+				BF5DD824282DCDC400E4ED00 /* Assets.xcassets in Resources */,
 				6AAF652627E30B740073EF3F /* Prompt-SemiBold.ttf in Resources */,
 				37FF0B16282CB5D000979779 /* Main.storyboard in Resources */,
 				37EFFE9427FFF57700509AAD /* Prompt-SemiBold.ttf in Resources */,
@@ -176,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A33CC2127EADAF300812191 /* FilterCollectionViewCell.swift in Sources */,
 				6AAF653727E30D130073EF3F /* LoginViewController.swift in Sources */,
 				6AAF653927E30D270073EF3F /* CameraViewController.swift in Sources */,
 				6AAF653527E30D090073EF3F /* SignUpViewController.swift in Sources */,
@@ -183,7 +192,7 @@
 				6AAF653B27E30D6C0073EF3F /* FilterDrawViewController.swift in Sources */,
 				6AAF653D27E30D730073EF3F /* FilterTextViewController.swift in Sources */,
 				6AB02DA927DAF455007553E1 /* SceneDelegate.swift in Sources */,
-				6AAF654127E30D950073EF3F /* FilterSaveViewController.swift in Sources */,
+				BF5DD822282D4B5600E4ED00 /* FilterSaveViewController.swift in Sources */,
 				6AAF653F27E30D820073EF3F /* FilterPictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
