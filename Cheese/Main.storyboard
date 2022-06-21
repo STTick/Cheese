@@ -19,18 +19,38 @@
         <!--Sign Up View Controller-->
         <scene sceneID="YgN-d2-Mkt">
             <objects>
+<<<<<<< Updated upstream
                 <viewController id="3lo-QB-gjw" customClass="SignUpViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aIX-J6-ds7">
+=======
+                <viewController id="3lo-QB-gjw" customClass="SignUpViewController" customModule="Cheese" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="aIX-J6-ds7">
+>>>>>>> Stashed changes
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="alert" translatesAutoresizingMaskIntoConstraints="NO" id="eHY-lD-7XT">
+<<<<<<< Updated upstream
                                 <rect key="frame" x="-195" y="144" width="804" height="759"/>
+=======
+                                <rect key="frame" x="-195" y="180" width="804" height="759"/>
+                                <color key="tintColor" red="0.97647058819999999" green="0.85882352939999995" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+>>>>>>> Stashed changes
                                 <constraints>
                                     <constraint firstAttribute="width" constant="804" id="DQF-Qr-OPF"/>
                                     <constraint firstAttribute="height" constant="759" id="y46-TX-C9O"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="signin" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLY-rg-dhc">
+                                <rect key="frame" x="71.5" y="595" width="271" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="3Jb-ZG-wDE"/>
+                                    <constraint firstAttribute="height" constant="44" id="VLV-5R-iuE"/>
+                                </constraints>
+                                <color key="tintColor" red="0.97647058819999999" green="0.85882352939999995" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="회원가입"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름 (한국어)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDO-bm-OOK">
                                 <rect key="frame" x="60" y="317" width="65" height="19"/>
                                 <constraints>
@@ -62,8 +82,8 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="alert" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-Yc-KxC">
                                 <rect key="frame" x="53" y="520" width="308" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="308" id="1Tb-H7-rvF"/>
-                                    <constraint firstAttribute="height" constant="34" id="hc6-mg-uxP"/>
+                                    <constraint firstAttribute="height" constant="34" id="PkL-Ym-Nbq"/>
+                                    <constraint firstAttribute="width" constant="308" id="vTj-kw-9ZB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -98,23 +118,17 @@
                                 <color key="textColor" red="0.3294117647" green="0.18039215689999999" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLO-pg-du0">
-                                <rect key="frame" x="72" y="592" width="271" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jEl-u6-wZU"/>
-                                    <constraint firstAttribute="width" constant="271" id="t6l-F6-1Dh"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="0.86274509799999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="회원가입">
-                                    <color key="baseBackgroundColor" red="0.97647058819999999" green="0.85882352939999995" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 계정이 있으십니까? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tC-1T-zRM">
+                                <rect key="frame" x="120" y="656" width="120.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjR-ty-15M">
-                                <rect key="frame" x="238" y="658" width="70" height="13"/>
+                                <rect key="frame" x="243" y="656" width="57" height="13"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="UFJ-bD-xWv"/>
-                                    <constraint firstAttribute="height" constant="13" id="eIg-TG-LOp"/>
+                                    <constraint firstAttribute="height" constant="13" id="NZn-AK-cdQ"/>
+                                    <constraint firstAttribute="width" constant="57" id="eQu-pC-EpJ"/>
                                 </constraints>
                                 <color key="tintColor" red="0.1941223145" green="0.1498413086" blue="0.0652923584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -132,6 +146,7 @@
                                     <segue destination="Ymg-xD-9yB" kind="show" id="pDd-fr-r04"/>
                                 </connections>
                             </button>
+<<<<<<< Updated upstream
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 계정이 있으십니까? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tC-1T-zRM">
                                 <rect key="frame" x="120" y="656" width="122" height="14.5"/>
                                 <constraints>
@@ -149,12 +164,15 @@
                                     <constraint firstAttribute="width" constant="82" id="BEp-6N-25s"/>
                                 </constraints>
                             </imageView>
+=======
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NbF-UN-f6P"/>
                         <color key="backgroundColor" red="1" green="0.86274509803921573" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="BjR-ty-15M" firstAttribute="leading" secondItem="aIX-J6-ds7" secondAttribute="leadingMargin" constant="218" id="2JE-WC-ctZ"/>
+                            <constraint firstItem="BjR-ty-15M" firstAttribute="top" secondItem="mLY-rg-dhc" secondAttribute="bottom" constant="17" id="2Zd-zc-Jwr"/>
                             <constraint firstItem="nUn-pF-Jz8" firstAttribute="leading" secondItem="aIX-J6-ds7" secondAttribute="leadingMargin" constant="139.5" id="3YQ-9x-Aph"/>
+<<<<<<< Updated upstream
                             <constraint firstItem="2tC-1T-zRM" firstAttribute="top" secondItem="zLO-pg-du0" secondAttribute="bottom" constant="20" id="4ap-y5-cW1"/>
                             <constraint firstItem="XAK-Yc-KxC" firstAttribute="top" secondItem="cK5-Nk-KMC" secondAttribute="bottom" constant="9" id="8ya-wK-q83"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zLO-pg-du0" secondAttribute="trailing" constant="51" id="9jh-Dk-6Dh"/>
@@ -164,28 +182,42 @@
                             <constraint firstItem="NbF-UN-f6P" firstAttribute="trailing" secondItem="mKF-G0-j6j" secondAttribute="trailing" constant="166" id="Gmg-YY-LY7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2tC-1T-zRM" secondAttribute="trailing" constant="152" id="It4-JB-pLy"/>
                             <constraint firstItem="tDO-bm-OOK" firstAttribute="top" secondItem="NbF-UN-f6P" secondAttribute="top" constant="273" id="J3t-XN-6dw"/>
+=======
+                            <constraint firstItem="mLY-rg-dhc" firstAttribute="centerX" secondItem="aIX-J6-ds7" secondAttribute="centerX" id="8CM-RR-gde"/>
+                            <constraint firstItem="eHY-lD-7XT" firstAttribute="top" secondItem="mKF-G0-j6j" secondAttribute="bottom" constant="35" id="A66-Xi-nL0"/>
+                            <constraint firstItem="uuu-hr-B6Y" firstAttribute="leading" secondItem="NbF-UN-f6P" secondAttribute="leading" constant="60" id="BUy-8P-aDD"/>
+                            <constraint firstItem="tDO-bm-OOK" firstAttribute="top" secondItem="NbF-UN-f6P" secondAttribute="top" constant="273" id="J3t-XN-6dw"/>
+                            <constraint firstItem="mKF-G0-j6j" firstAttribute="leading" secondItem="NbF-UN-f6P" secondAttribute="leading" constant="160" id="LKW-Dv-sjC"/>
+                            <constraint firstItem="BjR-ty-15M" firstAttribute="leading" secondItem="2tC-1T-zRM" secondAttribute="trailing" constant="2.5" id="M25-M5-G6r"/>
+>>>>>>> Stashed changes
                             <constraint firstItem="zYZ-0I-wC0" firstAttribute="top" secondItem="nUn-pF-Jz8" secondAttribute="bottom" constant="80" id="MCu-wM-9RU"/>
                             <constraint firstItem="uuu-hr-B6Y" firstAttribute="top" secondItem="zYZ-0I-wC0" secondAttribute="bottom" constant="22" id="Ogp-uV-G3u"/>
                             <constraint firstItem="KDo-0B-Yqa" firstAttribute="top" secondItem="uuu-hr-B6Y" secondAttribute="bottom" constant="8" id="Okj-3T-9qd"/>
                             <constraint firstItem="mKF-G0-j6j" firstAttribute="leading" secondItem="NbF-UN-f6P" secondAttribute="leading" constant="166" id="QGG-Q6-nwv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nUn-pF-Jz8" secondAttribute="trailing" constant="139.5" id="VTX-XI-SfK"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="BjR-ty-15M" secondAttribute="bottom" constant="137" id="Wqr-te-LWx"/>
                             <constraint firstAttribute="bottom" secondItem="eHY-lD-7XT" secondAttribute="bottom" constant="-95" id="YZg-yG-s4O"/>
                             <constraint firstItem="KDo-0B-Yqa" firstAttribute="centerX" secondItem="aIX-J6-ds7" secondAttribute="centerX" id="Za5-zp-wJ0"/>
                             <constraint firstItem="zYZ-0I-wC0" firstAttribute="centerX" secondItem="aIX-J6-ds7" secondAttribute="centerX" id="bzg-Xd-mbI"/>
                             <constraint firstItem="eHY-lD-7XT" firstAttribute="top" secondItem="mKF-G0-j6j" secondAttribute="bottom" constant="3" id="cSV-JE-wPK"/>
                             <constraint firstItem="mKF-G0-j6j" firstAttribute="top" secondItem="NbF-UN-f6P" secondAttribute="top" constant="33" id="cd3-9W-ejy"/>
                             <constraint firstAttribute="trailing" secondItem="eHY-lD-7XT" secondAttribute="trailing" constant="-195" id="dp9-xq-ckm"/>
+                            <constraint firstItem="mLY-rg-dhc" firstAttribute="top" secondItem="XAK-Yc-KxC" secondAttribute="bottom" constant="41" id="dsq-tX-ACL"/>
+                            <constraint firstItem="XAK-Yc-KxC" firstAttribute="top" secondItem="cK5-Nk-KMC" secondAttribute="bottom" constant="9" id="eeN-CW-Aw6"/>
                             <constraint firstItem="cK5-Nk-KMC" firstAttribute="top" secondItem="KDo-0B-Yqa" secondAttribute="bottom" constant="31" id="g5y-gT-Aq0"/>
                             <constraint firstItem="zYZ-0I-wC0" firstAttribute="top" secondItem="tDO-bm-OOK" secondAttribute="bottom" constant="8" id="gWo-fp-TqY"/>
-                            <constraint firstItem="BjR-ty-15M" firstAttribute="top" secondItem="zLO-pg-du0" secondAttribute="bottom" constant="22" id="her-Cd-6md"/>
-                            <constraint firstItem="XAK-Yc-KxC" firstAttribute="centerX" secondItem="aIX-J6-ds7" secondAttribute="centerX" id="hgA-tB-HY0"/>
                             <constraint firstItem="tDO-bm-OOK" firstAttribute="leading" secondItem="NbF-UN-f6P" secondAttribute="leading" constant="60" id="jFc-AM-kcI"/>
+                            <constraint firstItem="2tC-1T-zRM" firstAttribute="top" secondItem="mLY-rg-dhc" secondAttribute="bottom" constant="17" id="mRD-LO-sTu"/>
                             <constraint firstItem="cK5-Nk-KMC" firstAttribute="leading" secondItem="NbF-UN-f6P" secondAttribute="leading" constant="60" id="mxi-eA-aAk"/>
+<<<<<<< Updated upstream
                             <constraint firstItem="2tC-1T-zRM" firstAttribute="top" secondItem="zLO-pg-du0" secondAttribute="bottom" constant="20" id="peg-Xs-5fz"/>
                             <constraint firstItem="zLO-pg-du0" firstAttribute="top" secondItem="XAK-Yc-KxC" secondAttribute="bottom" constant="38" id="sBN-tZ-xYl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="2tC-1T-zRM" secondAttribute="bottom" constant="137.5" id="t9M-yB-PMM"/>
                             <constraint firstItem="zLO-pg-du0" firstAttribute="leading" secondItem="aIX-J6-ds7" secondAttribute="leadingMargin" constant="52" id="yMM-1Y-ZU3"/>
+=======
+                            <constraint firstItem="nUn-pF-Jz8" firstAttribute="top" secondItem="mKF-G0-j6j" secondAttribute="bottom" constant="88" id="uzs-rw-D10"/>
+                            <constraint firstItem="2tC-1T-zRM" firstAttribute="leading" secondItem="aIX-J6-ds7" secondAttribute="leadingMargin" constant="100" id="vo6-S7-mvV"/>
+                            <constraint firstItem="XAK-Yc-KxC" firstAttribute="centerX" secondItem="aIX-J6-ds7" secondAttribute="centerX" id="yir-c5-NPh"/>
+>>>>>>> Stashed changes
                             <constraint firstItem="eHY-lD-7XT" firstAttribute="leading" secondItem="aIX-J6-ds7" secondAttribute="leading" constant="-195" id="ziZ-TS-P9C"/>
                         </constraints>
                     </view>
@@ -205,6 +237,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="alert" translatesAutoresizingMaskIntoConstraints="NO" id="vkS-qI-ndK">
                                 <rect key="frame" x="-82" y="188" width="578" height="752"/>
+                                <color key="tintColor" red="0.97647058819999999" green="0.85882352939999995" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="752" id="Qo6-y2-noV"/>
                                     <constraint firstAttribute="width" constant="578" id="UeP-2b-1vQ"/>
