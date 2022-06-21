@@ -2,28 +2,16 @@
 //  FilterSaveViewController.swift
 //  Cheese
 //
-//  Created by 김유진 on 2022/03/17.
+//  Created by 서유선 on 2022/05/12.
 //
 
+import Foundation
 import UIKit
 
-class FilterSaveViewController: UIViewController {
 
+class FilterSaveViewController: UIViewController{
+    @IBOutlet weak var useFilterButton: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        useFilterButton.layer.cornerRadius = 10
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
